@@ -1,324 +1,277 @@
+import React from "react";
+import styled from "styled-components";
 
-/* Add font files for Ronzino */
-@font-face {
-  font-family: 'Ronzino';
-  src: url('fonts/ronzino.woff2') format('woff2'),
-       url('fonts/ronzino.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Add font files for Aujournuit */
-@font-face {
-  font-family: 'Aujournuit';
-  src: url('fonts/aujournuit.woff2') format('woff2'),
-       url('fonts/aujournuit.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-:root {
-  --font-family-ronzino: 'Ronzino', sans-serif;
-  --font-family-aujournuit: 'Aujournuit', sans-serif;
-  --text-rgb-86-69-63: rgba(86, 69, 63, 1);
-}
-
-.text-rgb-86-69-63 {
-  color: var(--text-rgb-86-69-63);
-}
-
-
-/* CSS Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  width: 100%;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.text-2 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  font-family: var(--font-family-ronzino);
-  font-weight: 700;
+const StyledElenaspan = styled.span`
+  color: #56453F;
   font-size: 22px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-}
-
-.text-3 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-}
-
-.text-4 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-}
-
-.text-5 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-}
-
-.text-6 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-}
-
-.text-7 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-}
-
-.text-8 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-}
-
-.text-9 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-}
-
-.text-10 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-  font-family: var(--font-family-ronzino);
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-}
-
-.text-11 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  font-family: var(--font-family-ronzino);
+  font-family: Ronzino;
   font-weight: 700;
-  font-size: 22px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-}
+  word-wrap: break-word;
+`;
 
-.text-12 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  font-family: var(--font-family-ronzino);
+const StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan01 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan02 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan03 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan04 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan05 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledPostdocresearcherininformationdesignatdensitydesignlabspan01 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledPostdocresearcherininformationdesignatdensitydesignlabspan02 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledPostdocresearcherininformationdesignatdensitydesignlabspan03 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledInterestedinmisleadingdatavisualisationsandtheircommunicationalfeaturesspan01 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledInterestedinmisleadingdatavisualisationsandtheircommunicationalfeaturesspan02 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledInterestedinmisleadingdatavisualisationsandtheircommunicationalfeaturesspan03 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledAlsoprettymuchinterestedinparticipatoryevaluationmethodologiesspan01 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledAlsoprettymuchinterestedinparticipatoryevaluationmethodologiesspan02 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledAlsoprettymuchinterestedinparticipatoryevaluationmethodologiesspan03 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledCarrubamydogisattheveryheartofmyworldspan01 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledCarrubamydogisattheveryheartofmyworldspan02 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledIwouldrelocateanywhereineuropeshouldifindthejobofmydreamsspan01 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledIwouldrelocateanywhereineuropeshouldifindthejobofmydreamsspan02 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledIwouldrelocateanywhereineuropeshouldifindthejobofmydreamsspan03 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan01 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan02 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan03 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan04 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan05 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledIspent6monthsinaarhusandsomehowitbecamethecityclosesttomyheartspan01 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledIspent6monthsinaarhusandsomehowitbecamethecityclosesttomyheartspan02 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledIspent6monthsinaarhusandsomehowitbecamethecityclosesttomyheartspan03 = styled.span`
+  color: #56453F;
+  font-size: 25px;
+  font-family: Ronzino;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
+
+const StyledProjectsspan = styled.span`
+  color: #56453F;
+  font-size: 22px;
+  font-family: Ronzino;
   font-weight: 700;
-  font-size: 22px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-}
+  word-wrap: break-word;
+`;
 
-.text-13 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  font-family: var(--font-family-aujournuit);
-  font-weight: normal;
+const StyledContactsspan = styled.span`
+  color: #56453F;
+  font-size: 22px;
+  font-family: Ronzino;
+  font-weight: 700;
+  word-wrap: break-word;
+`;
+
+const StyledElenaaversaspan = styled.span`
+  color: #56453F;
   font-size: 100px;
-  text-decoration: none;
-  text-transform: none;
-  color: var(--text-rgb-86-69-63);
-}
+  font-family: Aujournuit;
+  font-weight: 400;
+  word-wrap: break-word;
+`;
 
-.desktop-1-1 {
-@media (max-width: 1440px) {
-  .desktop-1-1 {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
+const StyledDesktop1 = styled.div`
+  width: 1440px;
+  height: 1024px;
+  position: relative;
+  background: #E1E2D8;
+  overflow: hidden;
+`;
 
-@media (max-width: 768px) {
-  .desktop-1-1 {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  background-color: rgba(225, 226, 216, 1);
-}
+export const Desktop1 = () => {
+  return (
+    <StyledDesktop1>
+      <StyledElena>Elena</StyledElena>
+      <StyledBasedinthenorthofItalyLombardiaBornintheverysouthCalabria><StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan01>Based in the north of Italy, </StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan01><StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan02>Lombardia</StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan02><StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan03>. Born in the very south, </StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan03><StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan04>Calabria</StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan04><StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan05>.</StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan05></StyledBasedinthenorthofItalyLombardiaBornintheverysouthCalabria>
+      <StyledPostdocResearcherinInformationDesignatDensityDesignLab><StyledPostdocresearcherininformationdesignatdensitydesignlabspan01>Post-doc Researcher in Information Design at </StyledPostdocresearcherininformationdesignatdensitydesignlabspan01><StyledPostdocresearcherininformationdesignatdensitydesignlabspan02>DensityDesign Lab</StyledPostdocresearcherininformationdesignatdensitydesignlabspan02><StyledPostdocresearcherininformationdesignatdensitydesignlabspan03>.</StyledPostdocresearcherininformationdesignatdensitydesignlabspan03></StyledPostdocResearcherinInformationDesignatDensityDesignLab>
+      <StyledInterestedinmisleadingdatavisualisationsandtheircommunicationalfeatures><StyledInterestedinmisleadingdatavisualisationsandtheircommunicationalfeaturesspan01>Interested in </StyledInterestedinmisleadingdatavisualisationsandtheircommunicationalfeaturesspan01><StyledInterestedinmisleadingdatavisualisationsandtheircommunicationalfeaturesspan02>misleading data visualisations</StyledInterestedinmisleadingdatavisualisationsandtheircommunicationalfeaturesspan02><StyledInterestedinmisleadingdatavisualisationsandtheircommunicationalfeaturesspan03> and their communicational features.</StyledInterestedinmisleadingdatavisualisationsandtheircommunicationalfeaturesspan03></StyledInterestedinmisleadingdatavisualisationsandtheircommunicationalfeatures>
+      <StyledAlsoprettymuchinterestedinparticipatoryevaluationmethodologies><StyledAlsoprettymuchinterestedinparticipatoryevaluationmethodologiesspan01>Also pretty much interested in</StyledAlsoprettymuchinterestedinparticipatoryevaluationmethodologiesspan01><StyledAlsoprettymuchinterestedinparticipatoryevaluationmethodologiesspan02> participatory evaluation methodologies</StyledAlsoprettymuchinterestedinparticipatoryevaluationmethodologiesspan02><StyledAlsoprettymuchinterestedinparticipatoryevaluationmethodologiesspan03>.</StyledAlsoprettymuchinterestedinparticipatoryevaluationmethodologiesspan03></StyledAlsoprettymuchinterestedinparticipatoryevaluationmethodologies>
+      <StyledCarrubamydogisattheveryheartofmyworld><StyledCarrubamydogisattheveryheartofmyworldspan01>Carruba</StyledCarrubamydogisattheveryheartofmyworldspan01><StyledCarrubamydogisattheveryheartofmyworldspan02>, my dog, is at the very heart of my world.</StyledCarrubamydogisattheveryheartofmyworldspan02></StyledCarrubamydogisattheveryheartofmyworld>
+      <StyledIwouldrelocateanywhereinEuropeshouldIfindthejobofmydreams><StyledIwouldrelocateanywhereineuropeshouldifindthejobofmydreamsspan01>I would relocate anywhere in </StyledIwouldrelocateanywhereineuropeshouldifindthejobofmydreamsspan01><StyledIwouldrelocateanywhereineuropeshouldifindthejobofmydreamsspan02>Europe</StyledIwouldrelocateanywhereineuropeshouldifindthejobofmydreamsspan02><StyledIwouldrelocateanywhereineuropeshouldifindthejobofmydreamsspan03>, should I find the job of my dreams.</StyledIwouldrelocateanywhereineuropeshouldifindthejobofmydreamsspan03></StyledIwouldrelocateanywhereinEuropeshouldIfindthejobofmydreams>
+      <StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticles><StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan01>I have a particular fondness for </StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan01><StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan02>novels</StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan02><StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan03>, and </StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan03><StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan04>occasionally</StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan04><StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan05> scientific articles.</StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan05></StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticles>
+      <StyledIspent6monthsinAarhusandsomehowitbecamethecityclosesttomyheart><StyledIspent6monthsinaarhusandsomehowitbecamethecityclosesttomyheartspan01>I spent 6 months in </StyledIspent6monthsinaarhusandsomehowitbecamethecityclosesttomyheartspan01><StyledIspent6monthsinaarhusandsomehowitbecamethecityclosesttomyheartspan02>Aarhus</StyledIspent6monthsinaarhusandsomehowitbecamethecityclosesttomyheartspan02><StyledIspent6monthsinaarhusandsomehowitbecamethecityclosesttomyheartspan03>, and somehow, it became the city closest to my heart.</StyledIspent6monthsinaarhusandsomehowitbecamethecityclosesttomyheartspan03></StyledIspent6monthsinAarhusandsomehowitbecamethecityclosesttomyheart>
+      <StyledProjects>Projects</StyledProjects>
+      <StyledContacts>Contacts</StyledContacts>
+      <StyledElenaAversa>Elena Aversa</StyledElenaAversa>
+    </StyledDesktop1>
+  );
+};
