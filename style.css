@@ -1,0 +1,324 @@
+
+/* Add font files for Ronzino */
+@font-face {
+  font-family: 'Ronzino';
+  src: url('fonts/ronzino.woff2') format('woff2'),
+       url('fonts/ronzino.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Add font files for Aujournuit */
+@font-face {
+  font-family: 'Aujournuit';
+  src: url('fonts/aujournuit.woff2') format('woff2'),
+       url('fonts/aujournuit.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --font-family-ronzino: 'Ronzino', sans-serif;
+  --font-family-aujournuit: 'Aujournuit', sans-serif;
+  --text-rgb-86-69-63: rgba(86, 69, 63, 1);
+}
+
+.text-rgb-86-69-63 {
+  color: var(--text-rgb-86-69-63);
+}
+
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-2 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  font-family: var(--font-family-ronzino);
+  font-weight: 700;
+  font-size: 22px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+}
+
+.text-3 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+}
+
+.text-4 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+}
+
+.text-5 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+}
+
+.text-6 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+}
+
+.text-7 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+}
+
+.text-8 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+}
+
+.text-9 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+}
+
+.text-10 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+  font-family: var(--font-family-ronzino);
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+}
+
+.text-11 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  font-family: var(--font-family-ronzino);
+  font-weight: 700;
+  font-size: 22px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+}
+
+.text-12 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  font-family: var(--font-family-ronzino);
+  font-weight: 700;
+  font-size: 22px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+}
+
+.text-13 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  font-family: var(--font-family-aujournuit);
+  font-weight: normal;
+  font-size: 100px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-86-69-63);
+}
+
+.desktop-1-1 {
+@media (max-width: 1440px) {
+  .desktop-1-1 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop-1-1 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(225, 226, 216, 1);
+}
