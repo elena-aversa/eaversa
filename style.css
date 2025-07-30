@@ -1,277 +1,71 @@
-import React from "react";
-import styled from "styled-components";
 
-const StyledElenaspan = styled.span`
-  color: #56453F;
-  font-size: 22px;
-  font-family: Ronzino;
-  font-weight: 700;
-  word-wrap: break-word;
-`;
-
-const StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan01 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan02 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan03 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan04 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan05 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledPostdocresearcherininformationdesignatdensitydesignlabspan01 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledPostdocresearcherininformationdesignatdensitydesignlabspan02 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledPostdocresearcherininformationdesignatdensitydesignlabspan03 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledInterestedinmisleadingdatavisualisationsandtheircommunicationalfeaturesspan01 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledInterestedinmisleadingdatavisualisationsandtheircommunicationalfeaturesspan02 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledInterestedinmisleadingdatavisualisationsandtheircommunicationalfeaturesspan03 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledAlsoprettymuchinterestedinparticipatoryevaluationmethodologiesspan01 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledAlsoprettymuchinterestedinparticipatoryevaluationmethodologiesspan02 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledAlsoprettymuchinterestedinparticipatoryevaluationmethodologiesspan03 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledCarrubamydogisattheveryheartofmyworldspan01 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledCarrubamydogisattheveryheartofmyworldspan02 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledIwouldrelocateanywhereineuropeshouldifindthejobofmydreamsspan01 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledIwouldrelocateanywhereineuropeshouldifindthejobofmydreamsspan02 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledIwouldrelocateanywhereineuropeshouldifindthejobofmydreamsspan03 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan01 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan02 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan03 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan04 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan05 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledIspent6monthsinaarhusandsomehowitbecamethecityclosesttomyheartspan01 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledIspent6monthsinaarhusandsomehowitbecamethecityclosesttomyheartspan02 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledIspent6monthsinaarhusandsomehowitbecamethecityclosesttomyheartspan03 = styled.span`
-  color: #56453F;
-  font-size: 25px;
-  font-family: Ronzino;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledProjectsspan = styled.span`
-  color: #56453F;
-  font-size: 22px;
-  font-family: Ronzino;
-  font-weight: 700;
-  word-wrap: break-word;
-`;
-
-const StyledContactsspan = styled.span`
-  color: #56453F;
-  font-size: 22px;
-  font-family: Ronzino;
-  font-weight: 700;
-  word-wrap: break-word;
-`;
-
-const StyledElenaaversaspan = styled.span`
-  color: #56453F;
-  font-size: 100px;
-  font-family: Aujournuit;
-  font-weight: 400;
-  word-wrap: break-word;
-`;
-
-const StyledDesktop1 = styled.div`
-  width: 1440px;
-  height: 1024px;
-  position: relative;
-  background: #E1E2D8;
-  overflow: hidden;
-`;
-
-export const Desktop1 = () => {
-  return (
-    <StyledDesktop1>
-      <StyledElena>Elena</StyledElena>
-      <StyledBasedinthenorthofItalyLombardiaBornintheverysouthCalabria><StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan01>Based in the north of Italy, </StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan01><StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan02>Lombardia</StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan02><StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan03>. Born in the very south, </StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan03><StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan04>Calabria</StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan04><StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan05>.</StyledBasedinthenorthofitalylombardiabornintheverysouthcalabriaspan05></StyledBasedinthenorthofItalyLombardiaBornintheverysouthCalabria>
-      <StyledPostdocResearcherinInformationDesignatDensityDesignLab><StyledPostdocresearcherininformationdesignatdensitydesignlabspan01>Post-doc Researcher in Information Design at </StyledPostdocresearcherininformationdesignatdensitydesignlabspan01><StyledPostdocresearcherininformationdesignatdensitydesignlabspan02>DensityDesign Lab</StyledPostdocresearcherininformationdesignatdensitydesignlabspan02><StyledPostdocresearcherininformationdesignatdensitydesignlabspan03>.</StyledPostdocresearcherininformationdesignatdensitydesignlabspan03></StyledPostdocResearcherinInformationDesignatDensityDesignLab>
-      <StyledInterestedinmisleadingdatavisualisationsandtheircommunicationalfeatures><StyledInterestedinmisleadingdatavisualisationsandtheircommunicationalfeaturesspan01>Interested in </StyledInterestedinmisleadingdatavisualisationsandtheircommunicationalfeaturesspan01><StyledInterestedinmisleadingdatavisualisationsandtheircommunicationalfeaturesspan02>misleading data visualisations</StyledInterestedinmisleadingdatavisualisationsandtheircommunicationalfeaturesspan02><StyledInterestedinmisleadingdatavisualisationsandtheircommunicationalfeaturesspan03> and their communicational features.</StyledInterestedinmisleadingdatavisualisationsandtheircommunicationalfeaturesspan03></StyledInterestedinmisleadingdatavisualisationsandtheircommunicationalfeatures>
-      <StyledAlsoprettymuchinterestedinparticipatoryevaluationmethodologies><StyledAlsoprettymuchinterestedinparticipatoryevaluationmethodologiesspan01>Also pretty much interested in</StyledAlsoprettymuchinterestedinparticipatoryevaluationmethodologiesspan01><StyledAlsoprettymuchinterestedinparticipatoryevaluationmethodologiesspan02> participatory evaluation methodologies</StyledAlsoprettymuchinterestedinparticipatoryevaluationmethodologiesspan02><StyledAlsoprettymuchinterestedinparticipatoryevaluationmethodologiesspan03>.</StyledAlsoprettymuchinterestedinparticipatoryevaluationmethodologiesspan03></StyledAlsoprettymuchinterestedinparticipatoryevaluationmethodologies>
-      <StyledCarrubamydogisattheveryheartofmyworld><StyledCarrubamydogisattheveryheartofmyworldspan01>Carruba</StyledCarrubamydogisattheveryheartofmyworldspan01><StyledCarrubamydogisattheveryheartofmyworldspan02>, my dog, is at the very heart of my world.</StyledCarrubamydogisattheveryheartofmyworldspan02></StyledCarrubamydogisattheveryheartofmyworld>
-      <StyledIwouldrelocateanywhereinEuropeshouldIfindthejobofmydreams><StyledIwouldrelocateanywhereineuropeshouldifindthejobofmydreamsspan01>I would relocate anywhere in </StyledIwouldrelocateanywhereineuropeshouldifindthejobofmydreamsspan01><StyledIwouldrelocateanywhereineuropeshouldifindthejobofmydreamsspan02>Europe</StyledIwouldrelocateanywhereineuropeshouldifindthejobofmydreamsspan02><StyledIwouldrelocateanywhereineuropeshouldifindthejobofmydreamsspan03>, should I find the job of my dreams.</StyledIwouldrelocateanywhereineuropeshouldifindthejobofmydreamsspan03></StyledIwouldrelocateanywhereinEuropeshouldIfindthejobofmydreams>
-      <StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticles><StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan01>I have a particular fondness for </StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan01><StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan02>novels</StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan02><StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan03>, and </StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan03><StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan04>occasionally</StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan04><StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan05> scientific articles.</StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticlesspan05></StyledIhaveaparticularfondnessfornovelsandoccasionallyscientificarticles>
-      <StyledIspent6monthsinAarhusandsomehowitbecamethecityclosesttomyheart><StyledIspent6monthsinaarhusandsomehowitbecamethecityclosesttomyheartspan01>I spent 6 months in </StyledIspent6monthsinaarhusandsomehowitbecamethecityclosesttomyheartspan01><StyledIspent6monthsinaarhusandsomehowitbecamethecityclosesttomyheartspan02>Aarhus</StyledIspent6monthsinaarhusandsomehowitbecamethecityclosesttomyheartspan02><StyledIspent6monthsinaarhusandsomehowitbecamethecityclosesttomyheartspan03>, and somehow, it became the city closest to my heart.</StyledIspent6monthsinaarhusandsomehowitbecamethecityclosesttomyheartspan03></StyledIspent6monthsinAarhusandsomehowitbecamethecityclosesttomyheart>
-      <StyledProjects>Projects</StyledProjects>
-      <StyledContacts>Contacts</StyledContacts>
-      <StyledElenaAversa>Elena Aversa</StyledElenaAversa>
-    </StyledDesktop1>
-  );
-};
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Georgia', serif;
+    scroll-behavior: smooth;
+    background: #f7f5ec;
+    color: #2f1f1c;
+    line-height: 1.6;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #f7f5ec;
+    padding: 1rem 2rem;
+    z-index: 1000;
+}
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    justify-content: center;
+}
+nav a {
+    text-decoration: none;
+    color: #2f1f1c;
+    font-weight: bold;
+}
+main {
+    margin-top: 100px;
+}
+.section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.center {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Georgia', serif;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    align-items: start;
+    justify-content: center;
+}
+h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Georgia', serif;
+}
+h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    font-family: 'Georgia', serif;
+}
+aside {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+a {
+    color: #9d5b4c;
+}
