@@ -15,18 +15,23 @@ body{margin:0;line-height:1.5}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 
-/* ===== Font locali (metti i file in /fonts) ===== */
+/* ===== Font locali ===== */
 @font-face{
   font-family:"Aujournuit";
-  src:url("fonts/Aujournuit.woff2") format("woff2"),
-      url("fonts/Aujournuit.woff") format("woff");
-  font-display:swap;
+  src:url("fonts/Aujournuit-Condensed.woff2") format("woff2"),
+      url("fonts/Aujournuit-Condensed.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face{
   font-family:"Ronzino";
   src:url("fonts/Ronzino.woff2") format("woff2"),
       url("fonts/Ronzino.woff") format("woff");
-  font-display:swap;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* ===== Base ===== */
