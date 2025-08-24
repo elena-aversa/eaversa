@@ -104,21 +104,36 @@ nav a.active{font-style:italic}
   .title{font-size:clamp(36px, 10vw, 72px)}
 }
 
-/* ===== Contacts page ===== */
-.contacts-page a { text-decoration: underline; }   /* i link in questa pagina sono sottolineati */
-.contacts-page nav a { text-decoration: none; }    /* ma la navbar rimane senza sottolineatura */
+/* Navbar: link attivo = corsivo + sottolineato (come nel mockup) */
+nav a.active {
+  font-style: italic;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
 
-.contacts-hero { margin-block: 16px 36px; }
-.contacts-title{
+/* ===== Contacts page ===== */
+.contacts-page a { text-decoration: underline; }
+.contacts-page nav a { text-decoration: none; } /* la navbar resta pulita, vedi regola sopra per l'attivo */
+
+.contacts-hero {
+  margin-block: 12px 40px;
+}
+/* Titolo su 6 colonne */
+.contacts-title {
+  grid-column: 1 / span 6;
   font-family: "Aujournuit","Ronzino",Georgia,serif;
   font-weight: 400;
-  font-size: clamp(36px, 5.6vw, 92px);
+  font-size: clamp(32px, 4.8vw, 80px);  /* più vicino al mockup */
   line-height: 1.12;
   letter-spacing: .005em;
   margin: 0;
 }
 
-.contacts-grid { margin-block: 8px 80px; }
+/* Testi: 6c + sidebar 2c */
+.contacts-grid { 
+  margin-block: 8px 80px; 
+  align-items: start;
+}
 .contacts-grid .left  { grid-column: span 6; }
 .contacts-grid .right { grid-column: span 2; }
 
@@ -128,8 +143,9 @@ nav a.active{font-style:italic}
   line-height: 1.55;
 }
 
-/* Responsive: due colonne -> una colonna */
+/* Responsive */
 @media (max-width: 1100px){
-  .contacts-grid .left  { grid-column: span 8; }
-  .contacts-grid .right { grid-column: span 8; }
+  .contacts-title { grid-column: 1 / -1; }
+  .contacts-grid .left,
+  .contacts-grid .right { grid-column: 1 / -1; }
 }
