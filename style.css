@@ -1,7 +1,7 @@
-/* ===== Variabili layout (8 colonne) ===== */
+/* ===== Variabili (8 colonne) ===== */
 :root{
   --bg:#E1E2D8;
-  --text:#4B403B;
+  --text:#4B403B;          /* testo scuro per leggibilità */
   --cols:8;
   --gutter:20px;
   --pad-x:40px;
@@ -13,18 +13,19 @@
 html:focus-within{scroll-behavior:smooth}
 body{margin:0;line-height:1.5}
 img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
 
-/* ===== Font locali ===== */
+/* ===== Font locali (metti i file in /fonts) ===== */
 @font-face{
   font-family:"Aujournuit";
-  src: url("fonts/Aujournuit.woff2") format("woff2"),
-       url("fonts/Aujournuit.woff") format("woff");
+  src:url("fonts/Aujournuit.woff2") format("woff2"),
+      url("fonts/Aujournuit.woff") format("woff");
   font-display:swap;
 }
 @font-face{
   font-family:"Ronzino";
-  src: url("fonts/Ronzino.woff2") format("woff2"),
-       url("fonts/Ronzino.woff") format("woff");
+  src:url("fonts/Ronzino.woff2") format("woff2"),
+      url("fonts/Ronzino.woff") format("woff");
   font-display:swap;
 }
 
@@ -39,6 +40,7 @@ body{
 em{font-style:italic}
 
 .container{
+  width:100%;                 /* evita shrink-to-fit */
   max-width:var(--maxw);
   margin-inline:auto;
   padding-inline:var(--pad-x);
@@ -53,12 +55,7 @@ em{font-style:italic}
 /* ===== Navbar ===== */
 header{padding-block:18px 24px}
 nav{display:flex; gap:32px}
-nav a{
-  text-decoration:none;
-  color:var(--text);
-  font-weight:600;
-  letter-spacing:.02em;
-}
+nav a{font-weight:600; letter-spacing:.02em}
 nav a.active{font-style:italic}
 
 /* ===== Blocchi top ===== */
@@ -78,7 +75,7 @@ nav a.active{font-style:italic}
   text-align:center;
 }
 .title{
-  font-family:"Aujournuit", "Ronzino", Georgia, serif;
+  font-family:"Aujournuit","Ronzino",Georgia,serif;
   font-weight:400;
   font-size:clamp(40px, 6.4vw, 96px);
   margin:0;
