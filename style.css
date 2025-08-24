@@ -113,39 +113,32 @@ nav a.active {
 
 /* ===== Contacts page ===== */
 .contacts-page a { text-decoration: underline; }
-.contacts-page nav a { text-decoration: none; } /* la navbar resta pulita, vedi regola sopra per l'attivo */
+.contacts-page nav a { text-decoration: none; } /* navbar resta pulita */
+nav a.active { font-style: italic; }
 
-.contacts-hero {
-  margin-block: 12px 40px;
-}
-/* Titolo su 6 colonne */
+.contacts-hero { margin-block: 16px 28px; }
 .contacts-title {
-  grid-column: 1 / span 6;
   font-family: "Aujournuit","Ronzino",Georgia,serif;
   font-weight: 400;
-  font-size: clamp(32px, 4.8vw, 80px);  /* più vicino al mockup */
-  line-height: 1.12;
-  letter-spacing: .005em;
+  font-size: clamp(22px, 2vw, 34px); /* più vicino al mockup */
+  line-height: 1.3;
+  letter-spacing: .01em;
   margin: 0;
+  max-width: 60ch; /* evita righe troppo lunghe */
 }
 
-/* Testi: 6c + sidebar 2c */
-.contacts-grid { 
-  margin-block: 8px 80px; 
-  align-items: start;
-}
+.contacts-grid { margin-block: 8px 80px; }
 .contacts-grid .left  { grid-column: span 6; }
 .contacts-grid .right { grid-column: span 2; }
 
 .contacts-grid p {
   margin: 0 0 18px 0;
-  font-size: clamp(15px, 1.2vw, 18px);
+  font-size: clamp(15px, 1.1vw, 17px);
   line-height: 1.55;
 }
 
 /* Responsive */
 @media (max-width: 1100px){
-  .contacts-title { grid-column: 1 / -1; }
   .contacts-grid .left,
   .contacts-grid .right { grid-column: 1 / -1; }
 }
