@@ -103,3 +103,33 @@ nav a.active{font-style:italic}
   header{padding-block:14px 20px}
   .title{font-size:clamp(36px, 10vw, 72px)}
 }
+
+/* ===== Contacts page ===== */
+.contacts-page a { text-decoration: underline; }   /* i link in questa pagina sono sottolineati */
+.contacts-page nav a { text-decoration: none; }    /* ma la navbar rimane senza sottolineatura */
+
+.contacts-hero { margin-block: 16px 36px; }
+.contacts-title{
+  font-family: "Aujournuit","Ronzino",Georgia,serif;
+  font-weight: 400;
+  font-size: clamp(36px, 5.6vw, 92px);
+  line-height: 1.12;
+  letter-spacing: .005em;
+  margin: 0;
+}
+
+.contacts-grid { margin-block: 8px 80px; }
+.contacts-grid .left  { grid-column: span 6; }
+.contacts-grid .right { grid-column: span 2; }
+
+.contacts-grid p {
+  margin: 0 0 18px 0;
+  font-size: clamp(15px, 1.2vw, 18px);
+  line-height: 1.55;
+}
+
+/* Responsive: due colonne -> una colonna */
+@media (max-width: 1100px){
+  .contacts-grid .left  { grid-column: span 8; }
+  .contacts-grid .right { grid-column: span 8; }
+}
