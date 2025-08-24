@@ -124,17 +124,19 @@ nav a.active {
 .contacts-page nav a { text-decoration: none; } /* navbar resta pulita */
 nav a.active { font-style: italic; }
 
-.contacts-hero { margin-block: 16px 28px; }
-.contacts-title {
-  font-family: "Aujournuit","Ronzino",Georgia,serif;
-  font-weight: 400;
- font-size: clamp(36px, 6vw, 106px); /* più vicino al mockup */
-  line-height: 1.3;
-  letter-spacing: .01em;
-  margin: 0;
-  max-width: 60ch; /* evita righe troppo lunghe */
+.contacts-hero {
+  margin-block: 16px 180px;
 }
 
+.contacts-title {
+  grid-column: 1 / span 6;
+  font-family: "Aujournuit","Ronzino",Georgia,serif;
+  font-weight: 400;
+  font-size: clamp(36px, 6vw, 106px);
+  line-height: 1.15;
+  letter-spacing: .005em;
+  margin: 0;
+}
 .contacts-grid { margin-block: 8px 80px; }
 .contacts-grid .left  { grid-column: span 6; }
 .contacts-grid .right { grid-column: span 2; }
