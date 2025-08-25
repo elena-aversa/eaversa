@@ -168,48 +168,51 @@ nav a.active { font-style: italic; }
 
 /* ===== Projects page ===== */
 .projects-page .section-label{
-  margin-block: 36px 10px;
-  font-size: clamp(12px, .8vw, 13px);
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--text); /* stesso colore del body text */
-  border-top: 2px solid var(--text); /* linea netta, spessa */
-  padding-top: 12px;
+  font-size: 13px;
+  letter-spacing: normal;
+  color: var(--text);
+
+  margin-block: 28px 12px;
+  padding-top: 10px;
+
+  border-top: 1px solid var(--text);  /* linea 1px netta */
 }
 
 .projects-page .pub-grid{
-  row-gap: 22px;
+  row-gap: 18px;
 }
 
 .projects-page .pub{
-  grid-column: span 2;   /* 4 per riga su desktop */
-  background: transparent;
-  border: none;
+  grid-column: span 2;
   padding: 0;
-  font-size: clamp(14px, 1.05vw, 16px);
-  line-height: 1.55;
+  border: 0;
+  background: transparent;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 .projects-page .pub a{
-  text-decoration: none;
-  border-bottom: 1px solid var(--text);
+  text-decoration: underline;
+  text-decoration-thickness: from-font;
+  text-underline-offset: 2px;
 }
-.projects-page .pub a:hover{ text-decoration: underline; }
 
-/* Box “not available” = solo testo normale */
 .projects-page .notice{
   margin: 0 0 24px 0;
   padding: 0;
   background: transparent;
-  border: none;
-  color: var(--text);  /* stesso colore del testo normale */
-  font-size: clamp(14px, 1.05vw, 16px);
+  border: 0;
+  color: var(--text);
+  font-size: inherit;
+  line-height: inherit;
 }
 
-/* Responsività */
 @media (max-width:1100px){
   .projects-page .pub{ grid-column: span 4; }
 }
 @media (max-width:700px){
   .projects-page .pub{ grid-column: 1 / -1; }
 }
+
