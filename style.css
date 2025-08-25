@@ -168,53 +168,48 @@ nav a.active { font-style: italic; }
 
 /* ===== Projects page ===== */
 .projects-page .section-label{
-  margin-block: 28px 12px;
+  margin-block: 36px 10px;
   font-size: clamp(12px, .8vw, 13px);
   font-weight: 700;
-  letter-spacing: .12em;
   text-transform: uppercase;
-  color: color-mix(in srgb, var(--text) 60%, #0000 40%);
-  border-top: 1px solid color-mix(in srgb, var(--text) 25%, white 75%);
-  padding-top: 10px;
+  color: var(--text); /* stesso colore del body text */
+  border-top: 2px solid var(--text); /* linea netta, spessa */
+  padding-top: 12px;
 }
 
-/* Griglia card pubblicazioni: usa la tua .grid a 8 colonne */
 .projects-page .pub-grid{
-  row-gap: 20px;        /* spazio tra righe della grid */
+  row-gap: 22px;
 }
 
-/* Ogni card occupa 2 colonne (=> 4 card per riga su desktop, come nel mockup) */
 .projects-page .pub{
-  grid-column: span 2;
-  border: 1px solid color-mix(in srgb, var(--text) 20%, white 80%);
-  padding: 12px 12px 10px;
+  grid-column: span 2;   /* 4 per riga su desktop */
   background: transparent;
+  border: none;
+  padding: 0;
   font-size: clamp(14px, 1.05vw, 16px);
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
-/* Link dentro le card: mantieni look tipografico, underline on hover */
 .projects-page .pub a{
   text-decoration: none;
-  border-bottom: 1px solid color-mix(in srgb, var(--text) 35%, white 65%);
+  border-bottom: 1px solid var(--text);
 }
 .projects-page .pub a:hover{ text-decoration: underline; }
 
-/* Box “maintenance” */
+/* Box “not available” = solo testo normale */
 .projects-page .notice{
-  border: 1px dashed color-mix(in srgb, var(--text) 25%, white 75%);
-  padding: 14px;
   margin: 0 0 24px 0;
-  color: color-mix(in srgb, var(--text) 70%, #0000 30%);
+  padding: 0;
+  background: transparent;
+  border: none;
+  color: var(--text);  /* stesso colore del testo normale */
   font-size: clamp(14px, 1.05vw, 16px);
-  background: rgba(255,255,255,.35);
 }
 
-/* Responsività: allinea a 2 card/riga su medium, 1 card/riga su small */
+/* Responsività */
 @media (max-width:1100px){
   .projects-page .pub{ grid-column: span 4; }
 }
 @media (max-width:700px){
   .projects-page .pub{ grid-column: 1 / -1; }
 }
-
