@@ -174,11 +174,12 @@ nav a.active { font-style: italic; }
   letter-spacing: normal;
   color: var(--text);
 
-  margin-block: 28px 12px;
+  margin-block: 36px 24px;   /* più spazio sopra e soprattutto sotto */
   padding-top: 10px;
 
-  border-top: 1px solid var(--text);  /* linea 1px netta */
+  border-top: 1px solid var(--text);
 }
+
 
 .projects-page .pub-grid{
   row-gap: 18px;
