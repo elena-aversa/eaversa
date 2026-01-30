@@ -37,6 +37,17 @@ a{color:inherit;text-decoration:none}
   font-display: swap;
 }
 
+@font-face{
+  font-family: "PlantasiaCalacarnItalic";
+  src:
+    local("PlantasiaCalacarn-italic"),
+    local("PlantasiaCalacarn Italic"),
+    url("fonts/PlantasiaCalacarn-italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
 /* ===== Base ===== */
 body{
   background:var(--bg);
@@ -90,6 +101,10 @@ nav a.active{font-style:italic}
   letter-spacing: .005em;
   margin: 0;
 }
+.title{
+  font-family: "PlantasiaCalacarnItalic","Aujournuit","Ronzino",Georgia,serif;
+  font-style: italic;
+}
 
 /* ===== Blocchi bottom ===== */
 .bottom{margin-block:64px 80px}
@@ -136,6 +151,10 @@ nav a.active { font-style: italic; }
   letter-spacing: .005em;
   margin: 0;
 }
+.contacts-title {
+  font-family: "PlantasiaCalacarnItalic","Aujournuit","Ronzino",Georgia,serif;
+  font-style: italic;
+}
 .contacts-grid { margin-block: 8px 80px; }
 .contacts-grid .left  { grid-column: span 6; }
 .contacts-grid .right { grid-column: span 2; }
@@ -167,17 +186,40 @@ nav a.active { font-style: italic; }
 }
 
 /* ===== Projects page ===== */
+.projects-page nav a em{
+  font-style: normal;
+}
+.projects-page .section-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 36px;
+  padding-top: 10px;
+  border-top: 1px solid var(--text);
+}
+
 .projects-page .section-label{
   font-weight: 700;
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: normal;
   color: var(--text);
+  margin: 0;
+}
 
-  margin-block: 36px 24px;   /* più spazio sopra e soprattutto sotto */
-  padding-top: 10px;
+.projects-page .section-toggle{
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
 
-  border-top: 1px solid var(--text);
+.projects-page .section-content{
+  margin-top: 18px;
 }
 
 

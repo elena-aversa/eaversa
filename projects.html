@@ -13,7 +13,7 @@
   <header class="container">
     <nav aria-label="primary">
       <a href="./index.html"><em>ELENA</em></a>
-      <a href="./projects.html" class="active">PROJECTS &amp; RESEARCH</a>
+      <a href="./projects.html" class="active">RESEARCH &amp; PROJECTS</a>
       <a href="./contacts.html">CONTACTS</a>
     </nav>
   </header>
@@ -21,8 +21,13 @@
   <main class="container">
 
     <!-- SCIENTIFIC PUBLICATIONS -->
-    <h2 class="section-label">SCIENTIFIC PUBLICATIONS</h2>
-    <section class="grid pub-grid" aria-label="Scientific publications">
+    <section class="section-block" data-collapsible>
+      <div class="section-header">
+        <h2 class="section-label">SCIENTIFIC PUBLICATIONS</h2>
+        <button class="section-toggle" type="button" aria-expanded="false" aria-controls="section-scientific">↓</button>
+      </div>
+      <div class="section-content" id="section-scientific" hidden>
+        <section class="grid pub-grid" aria-label="Scientific publications">
       <div class="pub">
         Aversa, E., & Bechmann, A. (2025). Misleading information visualisations as a tool of info-warfare: 
         How the same visualisations attract floating narratives of the Russia-Ukraine war parties. 
@@ -74,24 +79,38 @@
         Jurg, D. H. M., Tuters, M., Jane Godwin, E., et&nbsp;al. (2022).
         “Hey Alex…” (proceedings edition). Digital Methods Summer School and Data Sprint 2022.
       </div>
+        </section>
+      </div>
     </section>
 
     <!-- RESEARCH PROJECTS -->
-    <h2 class="section-label">RESEARCH PROJECTS</h2>
-    <section class="grid pub-grid" aria-label="Research projects">
-      <div class="pub">
-        <a href="https://www.theglassroom.org/supercharged-by-ai/" target="_blank" rel="noopener">'Supercharged by AI: Synthetic and Out of Control.' Media and Information Literacy for Societal Resilience through Europe-wide Library Networks
-        </a>
+    <section class="section-block" data-collapsible>
+      <div class="section-header">
+        <h2 class="section-label">RESEARCH PROJECTS</h2>
+        <button class="section-toggle" type="button" aria-expanded="false" aria-controls="section-research">↓</button>
       </div>
-      <div class="pub">
-        <a href="https://algocount.org/" target="_blank" rel="noopener">Algocount. Public Perception of Algorithms in Society. Accounting for the Algorithmic Public Opinion
-        </a>
+      <div class="section-content" id="section-research" hidden>
+        <section class="grid pub-grid" aria-label="Research projects">
+          <div class="pub">
+            <a href="https://www.theglassroom.org/supercharged-by-ai/" target="_blank" rel="noopener">'Supercharged by AI: Synthetic and Out of Control.' Media and Information Literacy for Societal Resilience through Europe-wide Library Networks
+            </a>
+          </div>
+          <div class="pub">
+            <a href="https://algocount.org/" target="_blank" rel="noopener">Algocount. Public Perception of Algorithms in Society. Accounting for the Algorithmic Public Opinion
+            </a>
+          </div>
+        </section>
       </div>
     </section>
 
     <!-- INFORMATION DESIGN POSTERS -->
-    <h2 class="section-label">INFORMATION DESIGN POSTERS</h2>
-    <section class="grid pub-grid" aria-label="Information design posters">
+    <section class="section-block" data-collapsible>
+      <div class="section-header">
+        <h2 class="section-label">INFORMATION DESIGN POSTERS</h2>
+        <button class="section-toggle" type="button" aria-expanded="false" aria-controls="section-posters">↓</button>
+      </div>
+      <div class="section-content" id="section-posters" hidden>
+        <section class="grid pub-grid" aria-label="Information design posters">
       <article class="pub project">
         <h3 class="project-title">POV SLOPAGANDA</h3>
         <p class="project-meta">DESIGNED FOR DMI WINTERSCHOOL 2026</p>
@@ -132,20 +151,58 @@ Instagram data.
       <article class="pub project">
         <p class="project-desc">For more DMI posters click here →</p>
       </article>
+        </section>
+      </div>
     </section>
 
     <!-- INFORMATION DESIGN — OTHER -->
-    <h2 class="section-label">INFORMATION DESIGN — OTHER</h2>
-    <p class="notice">Currently under maintenance. Available soon.</p>
+    <section class="section-block" data-collapsible>
+      <div class="section-header">
+        <h2 class="section-label">INFORMATION DESIGN — OTHER</h2>
+        <button class="section-toggle" type="button" aria-expanded="false" aria-controls="section-info-other">↓</button>
+      </div>
+      <div class="section-content" id="section-info-other" hidden>
+        <p class="notice">Currently under maintenance. Available soon.</p>
+      </div>
+    </section>
 
     <!-- GRAPHIC & EDITORIAL -->
-    <h2 class="section-label">GRAPHIC AND EDITORIAL</h2>
-    <p class="notice">Currently under maintenance. Available soon.</p>
+    <section class="section-block" data-collapsible>
+      <div class="section-header">
+        <h2 class="section-label">GRAPHIC AND EDITORIAL</h2>
+        <button class="section-toggle" type="button" aria-expanded="false" aria-controls="section-graphic">↓</button>
+      </div>
+      <div class="section-content" id="section-graphic" hidden>
+        <p class="notice">Currently under maintenance. Available soon.</p>
+      </div>
+    </section>
 
     <!-- OTHER -->
-    <h2 class="section-label">OTHER</h2>
-    <p class="notice">Currently under maintenance. Available soon.</p>
+    <section class="section-block" data-collapsible>
+      <div class="section-header">
+        <h2 class="section-label">OTHER</h2>
+        <button class="section-toggle" type="button" aria-expanded="false" aria-controls="section-other">↓</button>
+      </div>
+      <div class="section-content" id="section-other" hidden>
+        <p class="notice">Currently under maintenance. Available soon.</p>
+      </div>
+    </section>
 
   </main>
+  <script>
+    document.querySelectorAll(".section-toggle").forEach((toggle) => {
+      toggle.addEventListener("click", () => {
+        const contentId = toggle.getAttribute("aria-controls");
+        const content = document.getElementById(contentId);
+        const isOpen = toggle.getAttribute("aria-expanded") === "true";
+
+        toggle.setAttribute("aria-expanded", String(!isOpen));
+        toggle.textContent = isOpen ? "↓" : "↑";
+        if (content) {
+          content.hidden = isOpen;
+        }
+      });
+    });
+  </script>
 </body>
 </html>
