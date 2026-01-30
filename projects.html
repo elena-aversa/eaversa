@@ -190,17 +190,32 @@ Instagram data.
 
   </main>
   <script>
-    document.querySelectorAll(".section-toggle").forEach((toggle) => {
-      toggle.addEventListener("click", () => {
-        const contentId = toggle.getAttribute("aria-controls");
-        const content = document.getElementById(contentId);
-        const isOpen = toggle.getAttribute("aria-expanded") === "true";
+    const toggleSection = (toggle) => {
+      const contentId = toggle.getAttribute("aria-controls");
+      const content = document.getElementById(contentId);
+      const isOpen = toggle.getAttribute("aria-expanded") === "true";
 
-        toggle.setAttribute("aria-expanded", String(!isOpen));
-        toggle.textContent = isOpen ? "↓" : "↑";
-        if (content) {
-          content.hidden = isOpen;
-        }
+      toggle.setAttribute("aria-expanded", String(!isOpen));
+      toggle.textContent = isOpen ? "↓" : "↑";
+      if (content) {
+        content.hidden = isOpen;
+      }
+    };
+
+    document.querySelectorAll(".section-toggle").forEach((toggle) => {
+      toggle.addEventListener("click", (event) => {
+        event.stopPropagation();
+        toggleSection(toggle);
+      });
+    });
+
+    document.querySelectorAll(".section-header").forEach((header) => {
+      const toggle = header.querySelector(".section-toggle");
+      if (!toggle) {
+        return;
+      }
+      header.addEventListener("click", () => {
+        toggleSection(toggle);
       });
     });
   </script>
