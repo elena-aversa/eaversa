@@ -164,11 +164,22 @@ Instagram data.
     <!-- INFORMATION DESIGN — OTHER -->
     <section class="section-block" data-collapsible>
       <div class="section-header">
-        <h2 class="section-label">INFORMATION DESIGN — OTHER</h2>
+        <h2 class="section-label">INFORMATION DESIGN - OTHER</h2>
         <button class="section-toggle" type="button" aria-expanded="false" aria-controls="section-info-other">↓</button>
       </div>
       <div class="section-content" id="section-info-other" hidden>
-        <p class="notice">Currently under maintenance. Available soon.</p>
+        <section class="grid pub-grid" aria-label="Information design other projects">
+          <article class="pub project">
+            <h3 class="project-title">[R]PA: Measuring [Relative] Progress Acceleration</h3>
+            <p class="project-meta">WORLD DATA VISUALIZATION PRIZE - SHORTLIST</p>
+            <p class="project-meta">2023</p>
+            <img class="project-image" src="assets/IDOTHER/WDVPshortlist.png" alt="[R]PA: Measuring [Relative] Progress Acceleration project image" />
+            <p class="project-desc">
+              The visualisation highlights for each year (2010 to 2020), in the field of global health and other related areas, the most significant deviations between annual relative deltas and average development trends (average of annual deltas), defining a metric of progress. In this way, a more dynamic and direct view of the history of the data sets can be obtained (e.g., from a turbulent trend in malaria deaths to a softer trend in life expectancy. What's wrong with undernourishment?).
+              More info <a href="https://informationisbeautiful.net/visualizations/world-dataviz-prize-2023-shortlist/" target="_blank" rel="noopener">here</a>.
+            </p>
+          </article>
+        </section>
       </div>
     </section>
 
@@ -223,6 +234,58 @@ Instagram data.
       header.addEventListener("click", () => {
         toggleSection(toggle);
       });
+    });
+
+    const lightbox = document.createElement("div");
+    lightbox.className = "image-lightbox";
+    lightbox.setAttribute("hidden", "");
+    lightbox.innerHTML = `
+      <button class="image-lightbox-close" type="button" aria-label="Close expanded image">×</button>
+      <img class="image-lightbox-image" alt="" />
+    `;
+    document.body.appendChild(lightbox);
+
+    const lightboxImage = lightbox.querySelector(".image-lightbox-image");
+    const lightboxClose = lightbox.querySelector(".image-lightbox-close");
+
+    const openLightbox = (image) => {
+      lightboxImage.src = image.currentSrc || image.src;
+      lightboxImage.alt = image.alt || "Expanded project image";
+      lightbox.removeAttribute("hidden");
+      document.body.classList.add("lightbox-open");
+    };
+
+    const closeLightbox = () => {
+      lightbox.setAttribute("hidden", "");
+      lightboxImage.src = "";
+      document.body.classList.remove("lightbox-open");
+    };
+
+    document.querySelectorAll(".project-image").forEach((image) => {
+      image.setAttribute("role", "button");
+      image.setAttribute("tabindex", "0");
+      image.addEventListener("click", () => {
+        openLightbox(image);
+      });
+      image.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          openLightbox(image);
+        }
+      });
+    });
+
+    lightboxClose.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", (event) => {
+      if (event.target === lightbox) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !lightbox.hasAttribute("hidden")) {
+        closeLightbox();
+      }
     });
   </script>
 </body>
