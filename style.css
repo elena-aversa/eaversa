@@ -260,6 +260,16 @@ nav a.active { font-style: italic; }
   margin: 8px 0 0 0;
 }
 
+.projects-page .maintenance-placeholder{
+  font-size: 13px;
+  font-style: italic;
+  color: #EC3827;
+}
+
+.projects-page .maintenance-placeholder .project-desc{
+  margin: 0;
+}
+
 .projects-page .pub a{
   text-decoration: underline;
   text-decoration-thickness: from-font;
@@ -271,8 +281,9 @@ nav a.active { font-style: italic; }
   padding: 0;
   background: transparent;
   border: 0;
-  color: var(--text);
-  font-size: inherit;
+  color: #EC3827;
+  font-size: 13px;
+  font-style: italic;
   line-height: inherit;
 }
 
